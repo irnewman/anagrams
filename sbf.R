@@ -4,7 +4,6 @@
 # I have set those values to 0
 
 
-<<<<<<< HEAD
 # functions?
   # load lexicon? or add that to the package somehow
     # see load SBF files section
@@ -12,19 +11,13 @@
     # but not for sbf of single word
 
 
-=======
->>>>>>> 506a954642085e77e7532a44f076242a8b64368e
 
 # load libraries
 # ------------------------------
 library(tidyverse)
 library(data.table)
 library(qdapDictionaries)
-<<<<<<< HEAD
 library(anagrams)
-=======
-#library(anagrams)
->>>>>>> 506a954642085e77e7532a44f076242a8b64368e
 
 
 # load SBF files
@@ -33,11 +26,7 @@ bigram_freq <- read.table(paste0(here::here(), "\\bigram frequencies.txt"),
                           stringsAsFactors = FALSE)
 lexicon <- read.table(paste0(here::here(), "\\lexicon.txt"),
                       stringsAsFactors = FALSE)
-<<<<<<< HEAD
 nonword_lexicon <- read.table(paste0(here::here(), "\\nonwords.txt"))
-=======
-nonword_lexiicon <- read.table(paste0(here::here(), "\\nonwords.txt"))
->>>>>>> 506a954642085e77e7532a44f076242a8b64368e
 
 # clean up the bigram frequencies
 bigram_freq$V1 <- as.character(bigram_freq$V1)
@@ -56,24 +45,18 @@ colnames(lexicon) <- c("word")
 word_length <- 5  # nchar(word) in the future
 number_of_bigrams <- word_length - 1
 
-<<<<<<< HEAD
 # TESTING
 lexicon <- read.table(paste0(here::here(), "\\test items.csv"),
                       stringsAsFactors = FALSE)
 colnames(lexicon) <- c("word")
 lexicon$word <- toupper(lexicon$word)
 
-=======
->>>>>>> 506a954642085e77e7532a44f076242a8b64368e
 # create a list of words
 word_list <- lexicon$word
 
 # set the working directory
-<<<<<<< HEAD
 parent_dir <- (paste0(here::here(), "\\355"))
-=======
 parent_dir <- (paste0(here::here(), "\\words"))
->>>>>>> 506a954642085e77e7532a44f076242a8b64368e
 
 
 # loop through each word
@@ -98,7 +81,6 @@ for (word in word_list) {
     setwd(file.path(sub_dir))
   }
 
-<<<<<<< HEAD
   # # create list of potential alternatives
   # alternatives <- generate_nonwords(word)
   #
@@ -117,7 +99,7 @@ for (word in word_list) {
   #
   # # summarize alternatives
   # summarize_options(sub_dir)
-=======
+
   # create list of potential alternatives
   alternatives <- generate_nonwords(word)
 
@@ -136,7 +118,6 @@ for (word in word_list) {
 
   # summarize alternatives
   summarize_options(sub_dir)
->>>>>>> 506a954642085e77e7532a44f076242a8b64368e
 
 
 
