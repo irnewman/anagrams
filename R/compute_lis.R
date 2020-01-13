@@ -1,5 +1,6 @@
 
 #' Compute longest increasing sub-sequence. Used in compute_moves function
+#' Compute longest increasing sequence.
 #'
 #' @param x
 #'

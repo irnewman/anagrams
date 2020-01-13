@@ -1,6 +1,7 @@
 
 #' Compute the order of solution letters within the anagram. used in
 #' compute_moves function
+#' Compute the order of solution letters within the anagram.
 #'
 #' @param sol_letters Vector of letters in the solution.
 #' @param ana_letters Vector of letters in the anagram.

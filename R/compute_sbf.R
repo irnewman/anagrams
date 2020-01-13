@@ -59,3 +59,6 @@ compute_sbf <- function(word, bg_freq = bigram_freq) {
   return(total_sbf)
 
 }
+
+
+

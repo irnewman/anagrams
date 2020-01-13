@@ -12,6 +12,9 @@ compute_moves <- function(solution, anagram) {
   sol_letters <- toupper(unlist(strsplit(solution, "")))
   ana_letters <- toupper(unlist(strsplit(anagram, "")))
 
+  sol_letters <- unlist(strsplit(solution, ""))
+  ana_letters <- unlist(strsplit(anagram, ""))
+
   # init order of solution and anagram
   sol_order <- c(1:length(sol_letters))
 

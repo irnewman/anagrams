@@ -9,6 +9,7 @@ check_vowels <- function(word) {
 
   vowels <- c("A", "E", "I", "O", "U", "Y")
   word_letters <- toupper(unlist(strsplit(word, "")))
+  word_letters <- unlist(strsplit(word, ""))
 
   word_vowels <- c()
 
