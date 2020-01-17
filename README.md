@@ -1,6 +1,9 @@
 # anagrams
 A package to compute anagrams for psychology experiments.
 
+# bugs
+1. number of preserved bigrams and intact letters is computed incorrectly currently, fix incoming soon
+
 # upcoming changes
 -documented functions
 -readme document
