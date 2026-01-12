@@ -1,5 +1,4 @@
 # anagrams
-A package to compute anagrams for psychology experiments. Considerable updates are underway (Jan 2026).
+A package to compute anagrams for psychology experiments. 
 
-# words and nonwords generated
-See zip files "words.zip" and "nonwords_WORD_to_WORD.zip"
+Considerable updates are currently underway to adopt the SUBTLEx-UK word corpus (Van Heuven et al., 2014); see previous folder for anagrams generated from Novick and Sherman (2004) lexicon of words.
